@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from "@angular/common";
 
 @Component({
   selector: 'app-page',
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
-  title = 'jyoti Technosoft';
-  
-  constructor() { }
+  title = 'Jyoti Technosoft';
+  section: string = '';
+
+  constructor(
+  private scroller: ViewportScroller
+  ) { }
 
   ngOnInit(): void {
   }
 
+  showSection(event: any) {
+    this.section = event;
+    this.scroller.scrollToAnchor(event);
+  }
 }

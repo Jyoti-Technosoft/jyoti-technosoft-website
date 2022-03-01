@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-top-navigator',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavigatorComponent implements OnInit {
 
+  @Output() showSection = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  goDown(section: string) {
+    this.showSection.emit(section);
+  }
 }

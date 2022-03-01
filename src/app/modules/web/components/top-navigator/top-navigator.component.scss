@@ -1,9 +1,9 @@
 .toolbar {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 60px;
+	height: 100px;
 	display: flex;
 	align-items: center;
 	background-color: #1976d2;
@@ -18,5 +18,22 @@
 		&:hover {
 			opacity: 0.8;
 		}
+	}
+	.headers {
+		display: flex;
+		justify-content: space-between;
+		float: right;
+		right: 0;
+		position: absolute;
+		vertical-align: middle;
+	}
+	.logo {
+		height: 48px;
+		margin-top: 5px;
+	}
+	.header-item {
+		margin: 10px;
+		cursor: pointer;
+		font-size: 22px;
 	}
 }

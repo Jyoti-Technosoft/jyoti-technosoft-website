@@ -4,6 +4,8 @@ import { WebRoutingModule } from './web-routing.module';
 import { TopNavigatorComponent } from './components/top-navigator/top-navigator.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PageComponent } from './components/page/page.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 
@@ -11,7 +13,9 @@ import { PageComponent } from './components/page/page.component';
   declarations: [
     TopNavigatorComponent,
     FooterComponent,
-    PageComponent
+    PageComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
