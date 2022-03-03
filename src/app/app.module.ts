@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxsModule } from '@ngxs/store';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,11 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+const states: any = [];
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    NgxsModule.forRoot(states, {
+      developmentMode: !environment.production
+    }),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
