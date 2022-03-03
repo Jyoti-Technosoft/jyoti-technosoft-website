@@ -6,6 +6,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PageComponent } from './components/page/page.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -19,6 +22,9 @@ import { AboutComponent } from './components/about/about.component';
   ],
   imports: [
     CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
     WebRoutingModule
   ]
 })

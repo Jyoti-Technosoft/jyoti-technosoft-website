@@ -1,39 +1,51 @@
-.toolbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 100px;
-	display: flex;
-	align-items: center;
-	background-color: #1976d2;
-	color: white;
-	font-weight: 600;
-	img {
-		margin: 0 16px;
-	}
-	#twitter-logo {
-		height: 40px;
-		margin: 0 16px;
-		&:hover {
-			opacity: 0.8;
-		}
-	}
-	.headers {
-		display: flex;
-		justify-content: space-between;
-		float: right;
-		right: 0;
-		position: absolute;
-		vertical-align: middle;
-	}
-	.logo {
-		height: 48px;
-		margin-top: 5px;
-	}
-	.header-item {
-		margin: 10px;
-		cursor: pointer;
-		font-size: 22px;
-	}
+// .toolbar {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	height: 60px;
+// 	display: flex;
+// 	align-items: center;
+// 	background-color: #1976d2;
+// 	color: white;
+// 	font-weight: 600;
+// 	img {
+// 		margin: 0 16px;
+// 	}
+// 	#twitter-logo {
+// 		height: 40px;
+// 		margin: 0 16px;
+// 		&:hover {
+// 			opacity: 0.8;
+// 		}
+// 	}
+// 	.navigation {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		float: right;
+// 		right: 0;
+// 		position: absolute;
+// 		vertical-align: middle;
+// 	}
+// 	.logo {
+// 		height: 40px;
+// 		margin-top: 5px;
+// 	}
+// 	.nav-item {
+// 		padding: 10px;
+// 		cursor: pointer;
+// 		font-size: 15px;
+// 	}
+// }
+.logo{
+	height: 40px;
+	margin-top: 5px;
 }
+.navigation-spacer {
+	flex: 1 1 auto;
+  }
+
+  .nav-button-row {
+	display: table-cell;
+	width: 490px;
+  }

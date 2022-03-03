@@ -1,12 +1,27 @@
 <!-- Toolbar -->
-<div>
+<!-- <div>
   <div class="toolbar" role="banner">
     <img class="logo" src="/app/assets/JyotiTechnosoft-logo.png" />
-    <div class="headers">
-      <span class="header-item" (click)="goDown('home')">Home</span>
-      <span class="header-item" (click)="goDown('about')">About</span>
-      <span class="header-item" (click)="goDown('services')">Services</span>
-      <span class="header-item" (click)="goDown('skills')">Skills</span>
-      <span class="header-item" (click)="goDown('contacts')">Contacts</span>
+    <div class="navigation">
+      <span class="nav-item" (click)="goDown('home')">Home</span>
+      <span class="nav-item" (click)="goDown('about')">About</span>
+      <span class="nav-item" (click)="goDown('services')">Services</span>
+      <span class="nav-item" (click)="goDown('skills')">Skills</span>
+      <span class="nav-item" (click)="goDown('contacts')">Contacts</span>
     </div>
-</div>
+  </div>
+</div> -->
+
+<mat-toolbar>
+  <a href="#">
+    <img class="logo" src="/app/assets/JyotiTechnosoft-logo.png" />
+  </a>
+  <span class="navigation-spacer"></span>
+  <div class="nav-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+  </div>
+</mat-toolbar>
