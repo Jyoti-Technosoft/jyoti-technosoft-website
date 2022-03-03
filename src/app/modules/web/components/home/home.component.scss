@@ -1,0 +1,10 @@
+.home-container {
+    display: flex;
+}
+.content-section {
+    width: 50%;
+}
+.image-section {
+    background: url("/app/assets/images/home-bg.svg") no-repeat right;
+    width: 45%;
+}
