@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCarouselModule } from 'ng-mat-carousel';
+
 import { WebRoutingModule } from './web-routing.module';
-import { TopNavigatorComponent } from './components/top-navigator/top-navigator.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { PageComponent } from './components/page/page.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
-
-
+import { FooterComponent } from './components/footer/footer.component';
+import { TopNavigatorComponent } from './components/top-navigator/top-navigator.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    WebRoutingModule
+    MatCardModule,
+    MatGridListModule,
+    WebRoutingModule,
+    MatCarouselModule.forRoot()
   ]
 })
 export class WebModule { }
