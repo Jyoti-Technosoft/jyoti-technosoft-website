@@ -18,7 +18,7 @@ export class PageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showSection(event: any) {
+  showSection(event: string) {
     this.section = event;
     this.scroller.scrollToAnchor(event);
   }
