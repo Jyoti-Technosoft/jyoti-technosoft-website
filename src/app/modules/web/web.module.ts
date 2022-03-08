@@ -9,6 +9,9 @@ import { MatCarouselModule } from 'ng-mat-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 
 import { WebRoutingModule } from './web-routing.module';
 import { PageComponent } from './components/page/page.component';
@@ -18,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TopNavigatorComponent } from './components/top-navigator/top-navigator.component';
 import { ServicesComponent } from './components/services/services.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     HomeComponent,
     AboutComponent,
     ServicesComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactsComponent
   ],
   imports: [
     CommonModule,
@@ -38,6 +43,9 @@ import { SkillsComponent } from './components/skills/skills.component';
     MatGridListModule,
     MatTabsModule,
     MatProgressBarModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
     NgImageSliderModule,
     WebRoutingModule,
     MatCarouselModule.forRoot()
