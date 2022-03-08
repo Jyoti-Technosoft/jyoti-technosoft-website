@@ -10,9 +10,9 @@ export class HomeComponent implements OnInit {
   public imagesUrl: any = [];
 
   images = [ 
-    { imagePath: 'app/assets/gallery_images/Camel.jpg' },
-    { imagePath: 'app/assets/gallery_images/dog.jpg' },
-    { imagePath: 'app/assets/gallery_images/Tiger.jpg' }
+    { title: 'Jyoti Technosoft', subtitle: 'Delivering Range Of Solutions', content: 'Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.' },
+    { title: 'Complete Web Solutions', subtitle: 'Graphics / Web Design / Web Application', content: 'Responsive Designs' },
+    { title: 'Mobile Application Development', subtitle: 'Native App / Cross Platform Application Development', content: '' },
   ];
 
   constructor() { }

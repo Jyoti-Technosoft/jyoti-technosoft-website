@@ -1,6 +1,7 @@
 .mat-toolbar-row, .mat-toolbar-single-row {
 	position: fixed;
     top: 0;
+	z-index: 9;
 }
 .logo {
 	height: 40px;
@@ -11,5 +12,5 @@
 }
 .nav-button-row {
 	display: table-cell;
-	width: 400px;
+	width: 420px;
 }
