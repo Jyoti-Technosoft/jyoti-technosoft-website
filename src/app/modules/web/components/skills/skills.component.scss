@@ -1,0 +1,18 @@
+.skills-section {
+
+    .skills-section-title {
+        color: #367dc8;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        .content-left {
+            width: 50%;
+            margin-right: 50px;
+        }
+        .content-right {
+            width: 50%;
+        }
+    }
+}

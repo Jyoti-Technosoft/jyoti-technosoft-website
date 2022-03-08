@@ -1,16 +1,20 @@
 .services-section {
-    color: #367dc8;
-}
 
-.content-left {
-    width: 50%;
-}
-
-.content-right {
-    width: 50%;
-}
-
-.flow-text {
-    font-size: 1.68rem;
-    color: #367dc8;
+    .services-section-title {
+        color: #367dc8;
+    }
+    
+    .content-left{
+        margin-right: 50px;
+        width: 50%;
+    }
+    
+    .content-right {
+        width: 50%;
+    }
+    
+    .flow-text {
+        font-size: 1.68rem;
+        color: #367dc8;
+    }
 }
