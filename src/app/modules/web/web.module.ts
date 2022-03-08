@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCarouselModule } from 'ng-mat-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { WebRoutingModule } from './web-routing.module';
 import { PageComponent } from './components/page/page.component';
@@ -14,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TopNavigatorComponent } from './components/top-navigator/top-navigator.component';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { TopNavigatorComponent } from './components/top-navigator/top-navigator.
     FooterComponent,
     PageComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ServicesComponent
   ],
   imports: [
     CommonModule,
@@ -30,6 +33,7 @@ import { TopNavigatorComponent } from './components/top-navigator/top-navigator.
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
+    MatTabsModule,
     NgImageSliderModule,
     WebRoutingModule,
     MatCarouselModule.forRoot()
