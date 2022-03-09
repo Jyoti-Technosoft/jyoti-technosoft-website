@@ -5,40 +5,61 @@
 
     <div style="display: flex;">
         <div class="left-section">
-            <div>
-                <mat-form-field >
-                    <mat-label>Your Name</mat-label>
-                    <input matInput>
-                </mat-form-field>
-            </div>
-            <div>
-                <mat-form-field>
-                    <mat-label>Your Email</mat-label>
-                    <input matInput>
-                </mat-form-field>
-            </div>
-            <div>
-                <mat-form-field>
-                    <mat-label>Subject</mat-label>
-                    <input matInput>
-                </mat-form-field>
-            </div>
-            <div>
-                <mat-form-field>
-                    <mat-label>Message</mat-label>
-                    <input matInput>
-                </mat-form-field>
-            </div>
-            <button mat-button color="primary">SUBMIT</button>
+            <form [formGroup]="myForm">
+                <div class="icon-input">
+                    <mat-icon class="mr-10" aria-label="Example home icon">account_circle</mat-icon>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Your Name</mat-label>
+                        <input matInput type="text" formControlName="name" id="name">
+                        <mat-error *ngIf="myError('name', 'required')">Name is required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="icon-input">
+                    <mat-icon aria-label="Example home icon">email</mat-icon>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Your Email</mat-label>
+                        <input matInput type="email" formControlName="email" id="email">
+                        <mat-error *ngIf="myError('email', 'required')">Email is required</mat-error>
+                        <mat-error *ngIf="myError('email', 'email')">Email is invalid</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="icon-input">
+                    <mat-icon aria-label="Example home icon">edit</mat-icon>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Subject</mat-label>
+                        <input matInput type="text" formControlName="subject" id="subject">
+                        <mat-error *ngIf="myError('subject', 'required')">Subject is required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="icon-input">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">message</mat-icon>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Message</mat-label>
+                        <input matInput type="text" formControlName="message" id="message">
+                        <mat-error *ngIf="myError('message', 'required')">Message is required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="button-container">
+                    <ngx-recaptcha2 siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx" formControlName="recaptcha"></ngx-recaptcha2>
+                    <div class="submit-button">
+                        <button mat-raised-button disabled="true" color="primary" id="submitButton">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="right-section">
-            <div>
-                228, Green Elina, Anand Mahal Road, Opp. Sneh Sankul Wadi, Adajan, Surat 395009 Gujarat, India.
+            <div class="icon-input">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">business</mat-icon>
+                <p>228, Green Elina, Anand Mahal Road, Opp. Sneh Sankul Wadi, Adajan, Surat 395009 Gujarat, India.</p>
             </div>
-            <br />
-            <div>+91 98798 67255</div>
-            <br />
-            <div>info@JyotiTechnosoft.com</div>
+            <div class="icon-input">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">phone</mat-icon>
+                <p>+91 98798 67255</p>
+            </div>
+            <div class="icon-input">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">email</mat-icon>
+                <p>info@JyotiTechnosoft.com</p>
+            </div>
         </div>
     </div>
 

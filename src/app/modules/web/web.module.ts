@@ -12,6 +12,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { NgxCaptchaModule } from 'ngx-captcha';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { WebRoutingModule } from './web-routing.module';
 import { PageComponent } from './components/page/page.component';
@@ -46,7 +48,9 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    NgxCaptchaModule,
     NgImageSliderModule,
+    ReactiveFormsModule,
     WebRoutingModule,
     MatCarouselModule.forRoot()
   ]

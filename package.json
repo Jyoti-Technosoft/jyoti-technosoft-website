@@ -24,6 +24,7 @@
     "@angular/service-worker": "~13.2.4",
     "ng-image-slider": "^2.8.0",
     "ng-mat-carousel": "^0.11.1",
+    "ngx-captcha": "^11.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
