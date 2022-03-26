@@ -1,0 +1,20 @@
+<div class="skills-section">
+    <h1 class="skills-section-title">Skills</h1>
+    <div class="skills-container">
+        <div class="content-left">
+            <div *ngFor="let progress of progressValues">
+                <p>{{progress.title}}</p>
+                <mat-progress-bar
+                    class="example-margin"
+                    [color]="color"
+                    [mode]="mode"
+                    [value]="progress.value"
+                    [bufferValue]="progress.bufferValue">
+                </mat-progress-bar>
+            </div>
+        </div>
+        <div class="content-right">
+            <p>If you are looking for an organization that provides integrated IT solutions with high quality process, excellence in technology, reasonability, reliability & assurance to give you exactly what you need, your search ends at Jyoti Technosoft. Jyotit Technosoft is determined to make a niche for itself in the world of technology by delivering a variety of IT services like Custom Application Development, Web Development of any complexity to its clients worldwide.</p>
+        </div>
+    </div>
+</div>
