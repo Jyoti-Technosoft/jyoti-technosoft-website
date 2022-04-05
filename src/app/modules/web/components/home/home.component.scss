@@ -1,7 +1,9 @@
 .home-section {
     background: url("/app/assets/images/home-background.svg");
     background-size: cover;
-    height: 90vh;
+    height: 95vh;
+    padding: 70px 0px 70px 70px;
+    position: relative;
 
     .home-container {
         display: flex;
@@ -38,11 +40,16 @@
         margin-top: 25px;
     }
     
-    .image-slider-container {
-        height: 150px;
-        text-align: center;
-        margin: 0px;
-        margin-top: 50px;
+    .slider-container {
+
+        position: absolute;
+        bottom: 50px;
+        width: calc(100% - 140px);
+
+        .image-slider-container {
+            height: 150px;
+            text-align: center;
+        }
     }
 
 }
