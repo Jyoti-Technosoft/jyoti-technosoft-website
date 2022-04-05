@@ -1,15 +1,14 @@
 .home-section {
-    background: url("/app/assets/images/home-background.svg");
     background-size: cover;
     height: 95vh;
-    padding: 70px 0px 70px 70px;
+    padding: 10px 14% 70px 14%;
     position: relative;
 
     .home-container {
         display: flex;
         .content-section {
             width: 50%;
-            margin: 30px 0px 0px 30px;
+            margin: 30px 0px 0px 0px;
             .carousel-container {
                 text-align: center;
                 h3 {
@@ -36,7 +35,7 @@
     
     .image-section {
         background: url("/app/assets/images/home-bg.svg") no-repeat right;
-        width: 47%;
+        width: 50%;
         margin-top: 25px;
     }
     
