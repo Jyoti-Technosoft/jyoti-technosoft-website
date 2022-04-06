@@ -1,10 +1,32 @@
 footer {
-	margin-top: 8px;
-	display: flex;
-	align-items: center;
-	line-height: 20px;
-	a {
-		display: flex;
-		align-items: center;
+	// margin-top: 8px;
+	// display: flex;
+	// align-items: center;
+	// line-height: 20px;
+	// a {
+	// 	display: flex;
+	// 	align-items: center;
+	// }
+
+	&.page-footer {
+		padding-top: 20px;
+		color: #fff;
+		background-color: #eee !important;
+	}
+
+	.container {
+		margin: 0 auto;
+		max-width: 1280px;
+		width: 90%;
+	}
+
+	.center, .center-align {
+		text-align: center;
+	}
+
+	.footer-copyright{
+		overflow: hidden;
+    	min-height: 50px;
+		color: #424242 !important;
 	}
 }
