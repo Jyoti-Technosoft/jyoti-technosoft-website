@@ -38,16 +38,21 @@
         width: 50%;
         margin-top: 25px;
     }
-    
-    .slider-container {
 
-        position: absolute;
-        bottom: 50px;
-        width: 73%;
-
-        .image-slider-container {
-            height: 150px;
-            text-align: center;
+    .slider {
+        background: rgba(255, 255, 255, 0.32);
+        box-shadow: 0 10px 20px -5px rgb(0 0 0 / 13%);
+        margin: 50px 11px;
+        padding: 3px 5px;
+        overflow: hidden;
+        height: 90px;
+        border-radius: 20px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        
+        .slider-container {
+            display: flex;
+            margin-top: 20px;
         }
     }
 

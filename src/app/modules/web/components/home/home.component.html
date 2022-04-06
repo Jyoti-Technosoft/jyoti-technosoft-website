@@ -36,18 +36,12 @@
     </div>
   </div>
   <div class="slider-container">
-    <div class="image-slider">
-      <div class="image-slider-container">
-        <ng-image-slider
-          #nav
-          [images]="imagesUrl"
-          [infinite]="true"
-          [autoSlide]="1"
-          [imageSize]="{ width: '15%', height: 90 }"
-          slideImage="3"
-        >
-        </ng-image-slider>
-      </div>
-    </div>
-  </div>
+      <marquee class="slider">
+        <div class="slider-container">
+          <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
+            <img src="{{image.image}}" alt="" width="150" height="50"/>
+          </div>
+        </div>
+      </marquee>
+   </div>
 </div>
