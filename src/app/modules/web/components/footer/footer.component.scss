@@ -28,5 +28,50 @@ footer {
 		overflow: hidden;
     	min-height: 50px;
 		color: #424242 !important;
+		margin-top: 10px;
+	}
+
+	.grey.darken-3 {
+		background-color: #424242 !important;
+	}
+
+	.waves-effect {
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		overflow: hidden;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		vertical-align: middle;
+		z-index: 1;
+		-webkit-transition: .3s ease-out;
+		transition: .3s ease-out;
+	}
+
+	.btn-floating {
+		display: inline-block;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		padding: 0;
+		margin: 2px;
+		background-color: #26a69a;
+		border-radius: 50%;
+		-webkit-transition: background-color .3s;
+		transition: background-color .3s;
+		cursor: pointer;
+		vertical-align: middle;
+	}
+
+	i {
+		font-size: 24px;
+		line-height: 1.75;
 	}
 }
