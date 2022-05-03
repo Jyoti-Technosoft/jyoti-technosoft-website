@@ -5,7 +5,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCarouselModule } from 'ng-mat-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -14,6 +13,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { WebRoutingModule } from './web-routing.module';
 import { PageComponent } from './components/page/page.component';
@@ -52,7 +52,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     NgImageSliderModule,
     ReactiveFormsModule,
     WebRoutingModule,
-    MatCarouselModule.forRoot()
+    NgbCarouselModule
   ]
 })
 export class WebModule { }
