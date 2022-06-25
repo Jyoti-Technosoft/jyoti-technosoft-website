@@ -20,6 +20,13 @@ export class PageComponent implements OnInit {
 
   showSection(event: string) {
     this.section = event;
-    this.scroller.scrollToAnchor(event);
+    if(event == 'about' || event == 'contacts') {
+      this.scroller.setOffset([0, 60])
+    } else {
+      this.scroller.setOffset([0, 10])
+    }
+    setTimeout(() => {
+      this.scroller.scrollToAnchor(event);
+    }, 50)
   }
 }

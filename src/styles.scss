@@ -6,3 +6,11 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 22.5px;
 }
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #99c122;
+}
+
+.mat-progress-bar-fill::after {
+    background-color: #99c122;
+}
