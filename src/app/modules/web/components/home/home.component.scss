@@ -1,6 +1,6 @@
 .home-section {
     background-size: cover;
-    padding: 10px 14% 70px 14%;
+    padding: 10px 14% 78px 14%;
     position: relative;
 
     .home-container {
@@ -15,7 +15,7 @@
                 bottom: 0;
                 left: 0;
                 top: 0;
-                height: 350px;
+                height: auto;
                 width: auto;
                 h4 {
                     color: #3079CD !important;
@@ -24,6 +24,7 @@
                     line-height: 45px;
                     margin-bottom: 25px;
                     text-align: center;
+                    width: auto;
                 }
                 h5 {
                     text-align: center;
@@ -41,15 +42,20 @@
     }
     
     .image-section {
-        background: url("/app/assets/images/home-bg.svg") no-repeat right;
-        width: 50%;
         margin-top: 25px;
+        display: block;
+        margin: auto;
+        height: auto;
+        padding: 10px;
+       
     }
-
+    .image{
+        height: 600px;
+    }
     .slider {
         background: rgba(255, 255, 255, 0.32);
         box-shadow: 0 10px 20px -5px rgb(0 0 0 / 13%);
-        margin: 50px 11px;
+        margin: 20px 1px;
         padding: 3px 5px;
         overflow: hidden;
         height: 90px;
@@ -63,4 +69,33 @@
         }
     }
 
+}
+
+// Responsive view
+@media screen and (max-width: 977px) {
+    .home-section {
+        background-size: cover;
+        padding: 10px 10px 14%;
+        position: relative;
+        
+        .home-container { 
+            display: block;
+            margin: 5px 0px 0px 0px;
+
+            .content-section {
+                width: 100%;
+                margin: 0px 0px 0px 0px;
+            } 
+        }
+        .image-section{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .imagef{
+            height: 60%;
+
+        }
+    }
 }

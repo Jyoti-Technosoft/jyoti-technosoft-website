@@ -36,17 +36,17 @@
             </ngb-carousel>
         </div>
         <div class="image-section">
-            <p style="display: none">Image section</p>
+            <img src="app/assets/images/home-bg.svg" style="height: auto;width: 100%;" alt="">
         </div>
     </div>
     <div class="slider-container">
         <marquee class="slider">
-                <div class="slider-container">
-                    <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
-                        <img src="{{image.image}}" alt="" class={{image.margin}} width={{image.width}} height={{image.top}} />
-                    </div>
+            <div class="slider-container">
+                <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
+                    <img src="{{image.image}}" alt="" [ngStyle]="image.margin" width={{image.width}} height={{image.top}} />
                 </div>
-            </marquee>
-        </div>
-    
+            </div>
+        </marquee>
+    </div>
+
 </div>

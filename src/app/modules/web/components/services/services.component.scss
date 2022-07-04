@@ -5,6 +5,9 @@
     .services-section-title {
         color: #367dc8;
     }
+    .contant {
+        display: flex;
+    }
     
     .content-left{
         margin-right: 50px;
@@ -24,4 +27,20 @@
 .space {
     padding-top: 4vw;
     padding-bottom: 4vw;
+}
+
+@media screen and (max-width: 762px) {
+    .services-section {
+        .contant {
+            display: block;
+        }
+        .content-left {
+            margin-right: 50px;
+            width: 100%;
+        }
+        
+        .content-right {
+            width: 100%;
+        }
+    }
 }

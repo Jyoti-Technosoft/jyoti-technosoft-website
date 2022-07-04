@@ -9,7 +9,9 @@
     p, span {
         font-size: 15px;
     }
-
+    .carditem {
+        display: flex;
+    }
     .card-container {
         display: flex;
         margin: 30px 0px;
@@ -49,6 +51,9 @@
 // media query for responsive 
 @media screen and (max-width: 762px) {
     .about-section {
+        .carditem {
+            display: block;
+        }
         .card-container {
             display: block;
             margin: 30px 0px;

@@ -22,3 +22,20 @@
     padding-top: 2vw;
     padding-bottom: 2vw;
 }
+@media screen and (max-width: 846px) {
+
+    .skills-section {
+        .skills-container {
+            display: block;
+            justify-content: space-between;
+            .content-left {
+                width: 100%;
+                margin-right: 50px;
+            }
+            .content-right {
+                margin-top: 3rem;
+                width: 100%;
+            }
+        }
+    }
+}
