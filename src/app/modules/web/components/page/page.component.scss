@@ -250,11 +250,35 @@
       visibility: hidden;
     }
   }
-
+    // media query for responsive 
+    @media screen and (min-width: 480px) {
+      body {
+        background-color: lightgreen;
+      }
+    }
   .home-background {
     background: url("/app/assets/images/home-background.svg");
     background-size: cover;
-    margin: 60px 0px 0px 0px;
-    background-position: top;
+    margin: 60px 0px;
+    background-position:top   ;
     height: 95vh;
   }
+.parallax {
+  background-image:url('./imagesw/services.svg');
+  min-height: 250px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image:url('./imagesw/skills.svg');
+  min-height: 250px;
+  background-attachment: fixed;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

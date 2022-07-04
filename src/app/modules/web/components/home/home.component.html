@@ -4,34 +4,34 @@
             <ngb-carousel *ngIf="images" [showNavigationIndicators]="false" [showNavigationArrows]="false"
                 [pauseOnHover]="true" [pauseOnFocus]="true" [interval]="2500">
                 <ng-template ngbSlide>
-                <div>
-                    <img src="app/assets/images/home-background.svg" alt="">
-                </div>
-                <div class="carousel-caption">
-                    <h4>{{images[0].title}}</h4>
-                    <h5>{{images[0].subtitle}}</h5>
-                    <p>{{images[0].content}}</p>
-                </div>
+                    <div>
+                        <img src="app/assets/images/home-background.svg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                        <h4>{{images[0].title}}</h4>
+                        <h5>{{images[0].subtitle}}</h5>
+                        <p>{{images[0].content}}</p>
+                    </div>
                 </ng-template>
                 <ng-template ngbSlide>
-                <div>
-                    <img src="app/assets/images/home-background.svg" alt="">
-                </div>
-                <div class="carousel-caption">
-                    <h4>{{images[1].title}}</h4>
-                    <h5>{{images[1].subtitle}}</h5>
-                    <p>{{images[1].content}}</p>
-                </div>
+                    <div>
+                        <img src="app/assets/images/home-background.svg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                        <h4>{{images[1].title}}</h4>
+                        <h5>{{images[1].subtitle}}</h5>
+                        <p>{{images[1].content}}</p>
+                    </div>
                 </ng-template>
                 <ng-template ngbSlide>
-                <div>
-                    <img src="app/assets/images/home-background.svg" alt="">
-                </div>
-                <div class="carousel-caption">
-                    <h4>{{images[2].title}}</h4>
-                    <h5>{{images[2].subtitle}}</h5>
-                    <p>{{images[2].content}}</p>
-                </div>
+                    <div>
+                        <img src="app/assets/images/home-background.svg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                        <h4>{{images[2].title}}</h4>
+                        <h5>{{images[2].subtitle}}</h5>
+                        <p>{{images[2].content}}</p>
+                    </div>
                 </ng-template>
             </ngb-carousel>
         </div>
@@ -41,11 +41,12 @@
     </div>
     <div class="slider-container">
         <marquee class="slider">
-            <div class="slider-container">
-                <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
-                    <img src="{{image.image}}" alt="" width="150" height="50"/>
+                <div class="slider-container">
+                    <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
+                        <img src="{{image.image}}" alt="" class={{image.margin}} width={{image.width}} height={{image.top}} />
+                    </div>
                 </div>
-            </div>
-        </marquee>
-    </div>
+            </marquee>
+        </div>
+    
 </div>

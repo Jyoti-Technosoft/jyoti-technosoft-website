@@ -22,7 +22,7 @@ describe('AppComponent', () => {
 
   it(`should have as title 'jyoti-technosoft-website'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    const app:any | undefined = fixture.componentInstance;
     expect(app.title).toEqual('jyoti-technosoft-website');
   });
 

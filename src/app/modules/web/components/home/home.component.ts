@@ -19,12 +19,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.imagesUrl = [
-      { image: 'app/assets/client/biztree.png', thumbImage: 'app/assets/client/biztree.png', title: '' },
-      { image: 'app/assets/client/boatgroup.png', thumbImage: 'app/assets/client/boatgroup.png', title: '' },
-      { image: 'app/assets/client/cx-group.png', thumbImage: 'app/assets/client/cx-group.png', title: '' },
-      { image: 'app/assets/client/enteros.png', thumbImage: 'app/assets/client/enteros.png', title: '' },
-      { image: 'app/assets/client/oxos.png', thumbImage: 'app/assets/client/oxos.png', title: '' },
-      { image: 'app/assets/client/tlc.png', thumbImage: 'app/assets/client/tlc.png', title: '' },
+      { image: 'app/assets/client/progressmaker.png', thumbImage: 'progressmaker-new-logo-single.png',top:"30",margin:"margin-top:9px",width:"200", title: '' },
+      { image: 'app/assets/client/biztree.png', thumbImage: 'app/assets/client/biztree.png',top:"50",margin:"",width:"150", title: '' },
+      { image: 'app/assets/client/boatgroup.png', thumbImage: 'app/assets/client/boatgroup.png',top:"50",margin:"",width:"150", title: '' },
+      { image: 'app/assets/client/cx-group.png', thumbImage: 'app/assets/client/cx-group.png', top:"50",margin:"",width:"150", title: '' },
+      { image: 'app/assets/client/enteros.png', thumbImage: 'app/assets/client/enteros.png',top:"50",margin:"", width:"150",title: '' },
+      { image: 'app/assets/client/oxos.png', thumbImage: 'app/assets/client/oxos.png',top:"50",margin:"", width:"150", title: '' },
+      { image: 'app/assets/client/tlc.png', thumbImage: 'app/assets/client/tlc.png',top:"50",margin:"", width:"150",title: '' },
     ];
   }
 
