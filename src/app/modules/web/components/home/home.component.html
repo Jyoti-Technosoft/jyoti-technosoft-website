@@ -43,7 +43,7 @@
             <marquee class="slider">
                 <div class="slider-container">
                     <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
-                        <img src="{{image.image}}" alt="" [ngStyle]="image.margin" width={{image.width}}
+                        <img src="{{image.image}}" alt="" style={{image.margin}} width={{image.width}}
                             height={{image.top}} />
                     </div>
                 </div>

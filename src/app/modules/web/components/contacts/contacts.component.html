@@ -40,7 +40,7 @@
                     </mat-form-field>
                 </div>
                 <div class="button-container">
-                    <ngx-recaptcha2 siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx" required formControlName="recaptcha"></ngx-recaptcha2>
+                    <ngx-recaptcha2 siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx"  ></ngx-recaptcha2>
                     <div class="submit-button">
                         <button mat-raised-button [disabled]="myForm.invalid" color="primary" id="submitButton">SUBMIT</button>
                     </div>
@@ -54,11 +54,12 @@
             </div>
             <div class="icon-input">
                 <mat-icon aria-hidden="false" aria-label="Example home icon">phone</mat-icon>
-                <p>+91 98798 67255</p>
+
+                <p><a href="tel:+91 98798 67255" style="text-decoration:none !important; text-decoration:none; color: black;">+91 98798 67255</a></p>
             </div>
             <div class="icon-input">
                 <mat-icon aria-hidden="false" aria-label="Example home icon">email</mat-icon>
-                <p>info@JyotiTechnosoft.com</p>
+                <p><a href="mailto:info@JyotiTechnosoft.com" style="text-decoration:none !important; text-decoration:none; color: black;">  info@JyotiTechnosoft.com</a></p>
             </div>
         </div>
     </div>
