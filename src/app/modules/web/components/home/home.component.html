@@ -1,10 +1,11 @@
-<div class="home-section">
+
+<div class="container">
     <div class="home-container">
         <div class="content-section">
             <ngb-carousel *ngIf="images" [showNavigationIndicators]="false" [showNavigationArrows]="false"
                 [pauseOnHover]="true" [pauseOnFocus]="true" [interval]="2500">
                 <ng-template ngbSlide>
-                    <div>
+                    <div class="backgroundsmall">
                         <img src="app/assets/images/home-background.svg" alt="">
                     </div>
                     <div class="carousel-caption">
@@ -14,7 +15,7 @@
                     </div>
                 </ng-template>
                 <ng-template ngbSlide>
-                    <div>
+                    <div class="backgroundsmall">
                         <img src="app/assets/images/home-background.svg" alt="">
                     </div>
                     <div class="carousel-caption">
@@ -24,7 +25,7 @@
                     </div>
                 </ng-template>
                 <ng-template ngbSlide>
-                    <div>
+                    <div class="backgroundsmall">
                         <img src="app/assets/images/home-background.svg" alt="">
                     </div>
                     <div class="carousel-caption">
@@ -38,15 +39,14 @@
         <div class="image-section">
             <img src="app/assets/images/home-bg.svg" style="height: auto;width: 100%;" alt="">
         </div>
-    </div>
-    <div class="slider-container">
-        <marquee class="slider">
-            <div class="slider-container">
-                <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
-                    <img src="{{image.image}}" alt="" [ngStyle]="image.margin" width={{image.width}} height={{image.top}} />
+        <div class="slider-container">
+            <marquee class="slider">
+                <div class="slider-container">
+                    <div *ngFor="let image of imagesUrl" style="margin-right: 50px;">
+                        <img src="{{image.image}}" alt="" [ngStyle]="image.margin" width={{image.width}}
+                            height={{image.top}} />
+                    </div>
                 </div>
-            </div>
-        </marquee>
+            </marquee>
+        </div>
     </div>
-
-</div>

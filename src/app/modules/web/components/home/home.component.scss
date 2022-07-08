@@ -1,11 +1,73 @@
-.home-section {
-    background-size: cover;
-    padding: 10px 14% 78px 14%;
-    position: relative;
+// Old Code
+// .home-section {
+//     background-size: cover;
+//     padding: 10px 14% 78px 14%;
+//     position: relative;
 
+//     .home-container {
+//         display: flex;
+//         .content-section {
+//             width: 50%;
+//             margin: 30px 0px 0px 0px;
+//             .carousel-caption {
+//                 background: rgba(255, 255, 255, 0.32);
+//                 text-align: center;
+//                 right: 0;
+//                 bottom: 0;
+//                 left: 0;
+//                 top: 0;
+//                 height: auto;
+//                 width: auto;
+//                 h4 {
+//                     color: #3079CD !important;
+//                     font-size: 35px;
+//                     font-weight: 700;
+//                     line-height: 45px;
+//                     margin-bottom: 25px;
+//                     text-align: center;
+//                     width: auto;
+//                 }
+//                 h5 {
+//                     text-align: center;
+//                     color: #615e5f;
+//                 }
+//                 p {
+//                     font-size: 15px;
+//                     color: #615e5f;
+//                 }
+//             }
+//             .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+//                 background-color: red !important;
+//             }
+//         }
+//     }
+    
+//     .image-section {
+//         margin-top: 25px;
+//         display: block;
+//         margin: auto;
+//         height: auto;
+//         padding: 10px;
+       
+//     }
+//     .image{
+//         height: 600px;
+//     }
+// }
+
+// New code for responsive home page
+
+.container {
+    text-align:center;
+    position: relative;
+    height: 90vh;
+    width: 80%;
     .home-container {
         display: flex;
+        margin-top: 0px;
+        width: 100%;
         .content-section {
+        
             width: 50%;
             margin: 30px 0px 0px 0px;
             .carousel-caption {
@@ -39,63 +101,59 @@
                 background-color: red !important;
             }
         }
-    }
-    
-    .image-section {
-        margin-top: 25px;
-        display: block;
-        margin: auto;
-        height: auto;
-        padding: 10px;
-       
-    }
-    .image{
-        height: 600px;
-    }
-    .slider {
-        background: rgba(255, 255, 255, 0.32);
-        box-shadow: 0 10px 20px -5px rgb(0 0 0 / 13%);
-        margin: 20px 1px;
-        padding: 3px 5px;
-        overflow: hidden;
-        height: 90px;
-        border-radius: 20px;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        
-        .slider-container {
-            display: flex;
-            margin-top: 20px;
+        .image-section {
+            margin-top: 25px;
+            display: block;
+            margin: auto;
+            height: auto;
+            padding: 10px;
+        }
+        .image{
+            height: 600px;
         }
     }
-
 }
 
+.slider {
+    background: rgba(255, 255, 255, 0.32);
+    box-shadow: 0 10px 20px -5px rgb(0 0 0 / 13%);
+    margin: 20px 1px;
+    padding: 3px 5px;
+    overflow: hidden;
+    height: 90px;
+    border-radius: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    .slider-container {
+        display: flex;
+        margin-top: 20px;
+    }
+}
 // Responsive view
-@media screen and (max-width: 977px) {
-    .home-section {
-        background-size: cover;
-        padding: 10px 10px 14%;
-        position: relative;
-        
-        .home-container { 
-            display: block;
-            margin: 5px 0px 0px 0px;
-
+@media screen and (max-width: 1016px) {
+    .container {
+        .home-container {
+            display: block !important;
             .content-section {
-                width: 100%;
-                margin: 0px 0px 0px 0px;
-            } 
+                width:  100%; 
+                
+            }
         }
-        .image-section{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        .imagef{
-            height: 60%;
+        .backgroundsmall { 
+            height: 400px;
 
+            img { 
+                height: 400px;
+
+            }
+        }
+        
+        .image-section {
+            display: none !important;
+            
         }
     }
 }

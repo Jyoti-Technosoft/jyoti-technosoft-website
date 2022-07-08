@@ -6,7 +6,7 @@
 }
 .logo {
 	height: 40px;
-	margin: 10px 0px 0px 50px;
+	// margin: 10px 0px 0px 50px;
 }
 .navigation-spacer {
 	flex: 1 1 auto;
@@ -17,4 +17,25 @@
 }
 .mat-button.mat-primary {
     color: #367dc8 !important;
+}
+
+@media screen and (max-width: 977px) {
+    
+	.logo {
+		display: block;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		height: 40px;
+		margin: 10px 0px 0px 50px;
+	}
+    
+	.nav-button-row {
+		display: none;
+		width: 420px;
+	}
+
+	.mat-toolbar-row, .mat-toolbar-single-row {
+		 display: block !important; 
+		
+	}
 }

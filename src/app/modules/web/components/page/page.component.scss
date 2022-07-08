@@ -26,7 +26,9 @@
   .spacer {
     flex: 1;
   }
-
+  .space {
+    margin-bottom: 50px;
+  }
   .content {
     display: flex;
     margin: 82px auto 32px;
@@ -250,12 +252,7 @@
       visibility: hidden;
     }
   }
-    // media query for responsive 
-    @media screen and (min-width: 480px) {
-      body {
-        background-color: lightgreen;
-      }
-    }
+
   .home-background {
     background: url("/app/assets/images/home-background.svg");
     background-size: cover;
