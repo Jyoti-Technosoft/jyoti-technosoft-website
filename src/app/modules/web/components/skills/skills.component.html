@@ -2,19 +2,34 @@
     <h1 class="skills-section-title">Skills</h1>
     <div class="skills-container">
         <div class="content-left">
-            <div *ngFor="let progress of progressValues">
-                <p>{{progress.title}}</p>
-                <mat-progress-bar
-                    class="example-margin"
-                    [color]="color"
-                    [mode]="mode"
-                    [value]="progress.value"
-                    [bufferValue]="progress.bufferValue">
+            <div *ngFor="let progress of skill1">
+                <p>{{progress.heading}}</p>
+                <mat-progress-bar class="example-margin" [color]="color"  [mode]="mode" [value]="progress.progress">
+                </mat-progress-bar>
+            </div>
+            <div *ngFor="let progress of skill2">
+                <p>{{progress.heading}}</p>
+                <mat-progress-bar class="example-margin" [color]="color"  [mode]="mode" [value]="progress.progress">
+                </mat-progress-bar>
+            </div>
+            <div *ngFor="let progress of skill3">
+                <p>{{progress.heading}}</p>
+                <mat-progress-bar class="example-margin" [color]="color"  [mode]="mode" [value]="progress.progress">
+                </mat-progress-bar>
+            </div>
+            <div *ngFor="let progress of skill4">
+                <p>{{progress.heading}}</p>
+                <mat-progress-bar class="example-margin" [color]="color"  [mode]="mode" [value]="progress.progress">
+                </mat-progress-bar>
+            </div>
+            <div *ngFor="let progress of skill5">
+                <p>{{progress.heading}}</p>
+                <mat-progress-bar class="example-margin" [color]="color"  [mode]="mode" [value]="progress.progress">
                 </mat-progress-bar>
             </div>
         </div>
         <div class="content-right">
-            <p>If you are looking for an organization that provides integrated IT solutions with high quality process, excellence in technology, reasonability, reliability & assurance to give you exactly what you need, your search ends at Jyoti Technosoft. Jyotit Technosoft is determined to make a niche for itself in the world of technology by delivering a variety of IT services like Custom Application Development, Web Development of any complexity to its clients worldwide.</p>
+            <p>{{content}}</p>
         </div>
     </div>
     <div class="space"></div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import data from '../../../../assets/data/JT-website-json-data.json';
 
 @Component({
   selector: 'app-contacts',
@@ -8,6 +9,15 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactsComponent implements OnInit {
   myForm: FormGroup | any;
+
+  content: any = data.ContactUs[0].content.heading;
+  contact1: any = data.ContactUs[0].contactDetails.contact1;
+  contact2: any = data.ContactUs[0].contactDetails.contact2;
+  contact3: any = data.ContactUs[0].contactDetails.contact3;
+  contact4: any = data.ContactUs[0].contactDetails.contact4;
+  address: any = data.ContactUs[0].address.address;
+  phone: any = data.ContactUs[0].address.phone;
+  email: any = data.ContactUs[0].address.emailId;
 
   constructor() { }
 

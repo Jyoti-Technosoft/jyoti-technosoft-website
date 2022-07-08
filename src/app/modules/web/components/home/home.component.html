@@ -8,30 +8,40 @@
                     <div class="backgroundsmall">
                         <img src="app/assets/images/home-background.svg" alt="">
                     </div>
-                    <div class="carousel-caption">
-                        <h4>{{images[0].title}}</h4>
-                        <h5>{{images[0].subtitle}}</h5>
-                        <p>{{images[0].content}}</p>
+                    <div *ngFor="let list of card1" class="carousel-caption">
+                        <h4>{{list.heading}}</h4>
+                        <h5>{{list.subHeading}}</h5>
+                        <p>{{list.content}}</p>
                     </div>
                 </ng-template>
                 <ng-template ngbSlide>
                     <div class="backgroundsmall">
                         <img src="app/assets/images/home-background.svg" alt="">
                     </div>
-                    <div class="carousel-caption">
-                        <h4>{{images[1].title}}</h4>
-                        <h5>{{images[1].subtitle}}</h5>
-                        <p>{{images[1].content}}</p>
+                    <div *ngFor="let list of card2" class="carousel-caption">
+                        <h4>{{list.heading}}</h4>
+                        <h5>{{list.subHeading}}</h5>
+                        <p>{{list.content}}</p>
                     </div>
                 </ng-template>
                 <ng-template ngbSlide>
                     <div class="backgroundsmall">
                         <img src="app/assets/images/home-background.svg" alt="">
                     </div>
-                    <div class="carousel-caption">
-                        <h4>{{images[2].title}}</h4>
-                        <h5>{{images[2].subtitle}}</h5>
-                        <p>{{images[2].content}}</p>
+                    <div *ngFor="let list of card3" class="carousel-caption">
+                        <h4>{{list.heading}}</h4>
+                        <h5>{{list.subHeading}}</h5>
+                        <p>{{list.content}}</p>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="backgroundsmall">
+                        <img src="app/assets/images/home-background.svg" alt="">
+                    </div>
+                    <div *ngFor="let list of card4" class="carousel-caption">
+                        <h4>{{list.heading}}</h4>
+                        <h5>{{list.subHeading}}</h5>
+                        <p>{{list.content}}</p>
                     </div>
                 </ng-template>
             </ngb-carousel>

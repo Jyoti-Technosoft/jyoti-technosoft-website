@@ -1,35 +1,26 @@
 <div class="services-section">
     <h1 class="services-section-title">Services</h1>
     <div class="contant">
-        <div class="content-left">
-            <p>
-                Jyoti Technosoft is one of the IT firm which providing professional software development. We have 6+
-                years of experience in Web Application Development. We are providing complete Web Development Service.
-                Both on Frontend designing as well backend. We are also providing thirdparty API Integration.
-            </p>
-            <p>
-                To meet both consumer demand and expectations, we develop for both mobile and web. Developing for both
-                platforms is complex, but with the right tools and framework, the process is a little easier. We knows
-                how to use NativeScript and Angular to develop cross platform apps development.
-            </p>
+        <div class="content-left" *ngFor="let list of contents">
+            <p>{{list.content1}}</p>
+            <p>{{list.content2}}</p>
         </div>
         <div class="content-right">
             <mat-tab-group mat-align-tabs="start">
-                <mat-tab label="WEB">
-                    <p class="flow-text">WEB DEVELOPMENT</p>
-                    <p>We are having 6+ years of development experience in the web development. We are mainly working
-                        with Java and Javascript Scripting based Technologies.</p>
-                    <p>React Js, Angular Js, Full Stack developmet is our main interest area. </p>
+                <mat-tab label="WEB" *ngFor="let list of tab1">
+                    <p class="flow-text">{{list.subHeading}}</p>
+                    <p>{{list.content1}}</p>
+                    <p>{{list.content2}}</p>
                 </mat-tab>
-                <mat-tab label="MOBILE">
-                    <p class="flow-text">MOBILE DEVELOPMENT</p>
-                    <p>We have also started Mobile Development with the Android, Ionic, React Native etc. technologies.</p>
+                <mat-tab label="MOBILE" *ngFor="let list of tab2">
+                    <p class="flow-text">{{list.subHeading}}</p>
+                    <p>{{list.content}}</p>
                 </mat-tab>
-                <mat-tab label="FREELANCING">
-                    <p class="flow-text">FREELANCING</p>
-                    <p>We are also providing Freelancing Service. In which we are working with other development team as well individually also.</p>
+                <mat-tab label="FREELANCING" *ngFor="let list of tab3">
+                    <p class="flow-text">{{list.subHeading}}</p>
+                    <p>{{list.content}}</p>
                 </mat-tab>
-              </mat-tab-group>
+            </mat-tab-group>
         </div>
     </div>
     <div class="space"></div>

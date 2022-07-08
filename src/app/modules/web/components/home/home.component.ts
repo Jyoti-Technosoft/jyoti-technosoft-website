@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import data from '../../../../assets/data/JT-website-json-data.json';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public imagesUrl: any = [];
-
+  card1 :any = data.home[0].sliders.slide1;
+  card2 : any = data.home[0].sliders.slide2;
+  card3 : any = data.home[0].sliders.slide3;
+  card4 : any = data.home[0].sliders.slide4;
   images = [ 
     { title: 'Jyoti Technosoft', subtitle: 'Delivering Range Of Solutions', content: 'Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.' },
     { title: 'Complete Web Solutions', subtitle: 'Graphics / Web Design / Web Application', content: 'Responsive Designs' },

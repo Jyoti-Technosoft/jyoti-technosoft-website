@@ -1,0 +1,175 @@
+{
+    "home" : [
+    {
+    "sliders" : {
+        "slide1": [{
+            "heading": "Jyoti Technosoft",
+            "subHeading": " Delivering Range Of Solutions ",
+            "content": "Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services."
+        }],
+        "slide2": [{
+            "heading": "Complete Web Solutions",
+            "subHeading": "Graphics / Web Design / Web Application",
+            "content": "Responsive Designs"
+        }],
+        "slide3": [{
+            "heading": "Mobile Application Development",
+            "subHeading": "Native App / Cross Platform Application Development "
+        }
+        ],
+        "slide4": [{
+            "heading": "Affordable Website Design",
+            "content": "With Amazing Results Get a website that delivers more traffic, more leads and more profits."
+        }]
+    }
+    }],
+    "aboutus" : [{
+        "content": [{
+            "content1": "Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.",
+            "content2":  "We are fully aware of the current trends and practices of the IT industry and we always strive to present our clients with better services and make a difference in their lives.",
+            "content3":  "We understand that not all our clients are tech savvy, and gently guide them through the ever changing realm of the internet to their desired destination.We have created, launched and revamped many web sites and web applications. This experience has led  us to a deep understanding of what makes software projects successful.",
+            "content4":  "We still value the importance of seeing a smile of satisfaction in our client's faces. We clearly understand that developing and maintaining longstanding working relationship is the key to success for us in this competitive industry. It is for this reason that we put substantial effort at creating successful relationship that are maintained by our outstanding services all of which are available at cost effective rates. Such factors propel our clients to choose us among our competitors on a regular basis."
+        }],
+        "cards": {
+            "card1": [{
+                "heading": "AIM",
+                "content": "Is to achieve 100% customer trust by giving them personal attention & working with them on long term business relationship."
+            }],
+            "card2": [{
+                "heading": "VISION",
+                "content": "Is to provide best quality services to our clients by using latest technologies and help them to enhance their business globally."
+            }],
+            "card3": [{
+                "heading": "MISSION",
+                "content": "Is to deliver maximum value to our clients helping them to progress in constantly changing and challenging competitive market."
+            }]
+        },
+        "valueCard": [{
+            "heading": "VALUES"
+        }], 
+        "subContent1": [{
+            "heading": "Legitimacy:",
+            "content": "Conformity to the law or to rules of Information."
+        }],
+        "subContent2": [{
+            "heading": "Excellence:",
+            "content": "In the sense, working passionate and provide quality of work."
+        }],
+        "subContent3": [{
+            "heading": "Innovation:",
+            "content": "Everyday new changes required."
+        }],
+        "subContent4": [{
+            "heading": "Integrity:",
+            "content": "We will be fair, honest, transparent and ethical in our conduct everything."
+        }],
+        "subContent5": [{
+            "heading": "Unity:",
+            "content": "To build hard based on tolerance, understanding and mutual co-operation, work as cohesively with our colleagues across the group and with our customers and partners."
+        }]
+    }],
+    "Services":[{
+        "contents": [{
+            "content1": "Jyoti Technosoft is one of the IT firm which providing professional software development. We have 6+years of experience in Web Application Development. We are providing complete Web Development Service. Both on Frontend designing as well backend. We are also providing thirdparty API Integration.",
+            "content2": "To meet both consumer demand and expectations, we develop for both mobile and web.Developing for both platforms is complex, but with the right tools and framework, the process is  little easier. We knows how to use NativeScript and Angular to develop cross platform apps development. " 
+        }],
+        "tabs": {
+            "tab1": [{
+                "heading": "WEB",
+                "subHeading": "WEB DEVELOPMENT",
+                "content1": "We are having 6+ years of development experience in the web development. We are mainly working with Java and Javascript Scripting based Technologies.",
+                "content2": "React Js, Angular Js, Full Stack developmet is our main interest area."
+            }],
+            "tab2": [{
+                "heading": "MOBILE",
+                "subHeading": "MOBILE DEVELOPMENT",
+                "content": "We have also started Mobile Development with the Android, Ionic, React Native etc. technologies."
+            }],
+            "tab3": [{
+                "heading": "FREELANCING",
+                "subHeading": "FREELANCING",
+                "content": "We are also providing Freelancing Service. In which we are working with other development team as well individually also."
+            }]
+        }
+    }],
+    "Skills": [{
+        "skillReport": {
+            "skill1": [{
+                "heading": "HTML & CSS",
+                "progress": 90
+            }],
+            "skill2": [{
+                "heading": "Javascript",
+                "progress": 70
+            }],
+            "skill3": [{
+                "heading": "React Js",
+                "progress": 65
+            }],
+            "skill4": [{
+                "heading": "Angular Js",
+                "progress": 85
+            }],
+            "skill5": [{
+                "heading": "Java",
+                "progress": 80
+            }]
+        },
+        "content": "If you are looking for an organization that provides integrated IT solutions with high quality process, excellence in technology, reasonability, reliability & assurance to give you exactly what you need, your search ends at Jyoti Technosoft. Jyotit Technosoft is determined to make a niche for itself in the world of technology by delivering a variety of IT services like Custom Application Development, Web Development of any complexity to its clients worldwide."
+    }],
+    "Map": [{
+        "addressCard": {
+            "image": { },
+            "address": {
+                "heading": "Jyoti Technosoft",
+                "address": "228, Second Floor, Green Elina, Nr. Sneh Sankul's Vadi, Anand Mahal Rd, Giriraj Society, Adajan, Surat, Gujarat 395009"
+            },
+            "directionCard": {
+                "directionTooltip": "Get directions to this location on Google Maps.",
+                "directionLabel": "Directions",
+                "directionIcon": ""
+            },
+            "reviewBox": {
+                "reviewNumber": "4.8" 
+            }
+        }
+    }],
+    "ContactUs": [{
+        "content": {
+            "heading": "Drop a line to us. Your word is most important to us."
+        },
+        "contactDetails": {
+            "contact1": [{
+                "icon": "account_circle",
+                "name": "Your Name"
+            }],
+            "contact2": [{
+                "icon": "email",
+                "email":"Your Email"
+            }],
+            "contact3": [{
+                "icon":"edit",
+                "subject": "Subject"
+            }],
+            "contact4": [{
+                "icon": "message",
+                "message": "Message"
+            }]
+        },
+        "address": {
+            "address":[{
+                "icon": "business",
+                "address": "228, Green Elina, Anand Mahal Road, Opp. Sneh Sankul Wadi, Adajan, Surat 395009 Gujarat, India."
+            }],
+            "phone":[{
+                "icon":"phone",
+                "phone":  "+91 98798 67255 "
+            }],
+            "emailId":[{
+                "icon":"email",
+                "emailId": "info@JyotiTechnosoft.com"
+            }]
+        }
+    }]
+}
+

@@ -1,48 +1,48 @@
 <div class="about-section">
 
     <h1 class="about-section-title">About Us</h1>
-
-    <p>Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.</p>
-    <p>We are fully aware of the current trends and practices of the IT industry and we always strive to present our clients with better services and make a difference in their lives.</p>
-    <p>We understand that not all our clients are tech savvy, and gently guide them through the ever changing realm of the internet to their desired destination. We have created, launched and revamped many web sites and web applications. This experience has led us to a deep understanding of what makes software projects successful.</p>
-    <p>We still value the importance of seeing a smile of satisfaction in our client's faces. We clearly understand that developing and maintaining longstanding working relationship is the key to success for us in this competitive industry. It is for this reason that we put substantial effort at creating successful relationship that are maintained by our outstanding services all of which are available at cost effective rates. Such factors propel our clients to choose us among our competitors on a regular basis.</p>
-
+    <div *ngFor="let list of content">
+        <p>{{list.content1}}</p>
+        <p>{{list.content2}}</p>
+        <p>{{list.content3}}</p>
+        <p>{{list.content4}}</p>
+    </div>
     <div class="card-container">
-        <mat-card class="card">
-            <mat-card-title class="card-title">AIM</mat-card-title>
-            <mat-card-content>Is to achieve 100% customer trust by giving them personal attention & working with them on long term business relationship.</mat-card-content>
+        <mat-card class="card" *ngFor="let list of card1">
+            <mat-card-title class="card-title">{{list.heading}}</mat-card-title>
+            <mat-card-content>{{list.content}}</mat-card-content>
         </mat-card>
-        <mat-card class="card">
-            <mat-card-title class="card-title">VISION</mat-card-title>
-            <mat-card-content>Is to provide best quality services to our clients by using latest technologies and help them to enhance their business globally.</mat-card-content>
+        <mat-card class="card" *ngFor="let list of card2">
+            <mat-card-title class="card-title">{{list.heading}}</mat-card-title>
+            <mat-card-content>{{list.content}}</mat-card-content>
         </mat-card>
-        <mat-card class="card last-card">
-            <mat-card-title class="card-title">MISSION</mat-card-title>
-            <mat-card-content>Is to deliver maximum value to our clients helping them to progress in constantly changing and challenging competitive market.</mat-card-content>
+        <mat-card class="card last-card" *ngFor="let list of card3">
+            <mat-card-title class="card-title">{{list.heading}}</mat-card-title>
+            <mat-card-content>{{list.content}}</mat-card-content>
         </mat-card>
     </div>
 
     <mat-card class="values-card">
-        <mat-card-title class="card-title">VALUES</mat-card-title>
+        <mat-card-title class="card-title" *ngFor="let list of valuecard">{{list.heading}}</mat-card-title>
         <mat-card-content>
-            <div class="carditem">
-                <div class="values-card-title">Legitimacy:</div> <div>Conformity to the law or to rules of Information.</div>
+            <div class="carditem" *ngFor="let list of subContent1">
+                <div class="values-card-title">{{list.heading}}</div> <div>{{list.content}}</div>
             </div>
                 <br />
-            <div class="carditem">
-                <div class="values-card-title">Excellence:</div> <div>In the sense, working passionate and provide quality of work.</div>
+            <div class="carditem" *ngFor="let list of subContent2">
+                <div class="values-card-title">{{list.heading}}</div> <div>{{list.content}}</div>
             </div>
                 <br />
-            <div class="carditem">
-                <div class="values-card-title">Innovation:</div> <div>Everyday new changes required.</div>
+            <div class="carditem" *ngFor="let list of subContent3">
+                <div class="values-card-title">{{list.heading}}</div> <div>{{list.content}}</div>
             </div>
                 <br />
-            <div class="carditem">
-                <div class="values-card-title">Integrity:</div> <div>We will be fair, honest, transparent and ethical in our conduct everything.</div>
+            <div class="carditem" *ngFor="let list of subContent4">
+                <div class="values-card-title">{{list.heading}}</div> <div>{{list.content}}</div>
             </div>
                 <br />
-            <div class="carditem">
-                <div class="values-card-title">Unity:</div> <div>To build hard based on tolerance, understanding and mutual co-operation, work as cohesively with our colleagues across the group and with our customers and partners.</div>
+            <div class="carditem" *ngFor="let list of subContent5">
+                <div class="values-card-title">{{list.heading}}</div> <div>{{list.content}}</div>
             </div>
 
         </mat-card-content>
