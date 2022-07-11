@@ -270,7 +270,16 @@
   width: 100%;
   background-size: cover;
 }
-
+.parallax2 {
+  background-image:url('./imagesw/gallery.png');
+  min-height: 250px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
 .parallax1 {
   background-image:url('./imagesw/skills.svg');
   min-height: 250px;
@@ -285,5 +294,8 @@
   }
   .parallax {
     background-attachment: scroll;
+  }
+  .parallax2 {
+     background-attachment: scroll;
   }
 }
