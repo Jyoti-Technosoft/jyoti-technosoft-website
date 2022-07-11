@@ -6,7 +6,7 @@
                 [pauseOnHover]="true" [pauseOnFocus]="true" [interval]="2500">
                 <ng-template ngbSlide>
                     <div class="backgroundsmall">
-                        <img src="app/assets/images/home-background.svg" alt="">
+                        <img src="{{sliderimage}}" alt="">
                     </div>
                     <div *ngFor="let list of card1" class="carousel-caption">
                         <h4>{{list.heading}}</h4>
@@ -16,7 +16,7 @@
                 </ng-template>
                 <ng-template ngbSlide>
                     <div class="backgroundsmall">
-                        <img src="app/assets/images/home-background.svg" alt="">
+                        <img src="{{sliderimage}}" alt="">
                     </div>
                     <div *ngFor="let list of card2" class="carousel-caption">
                         <h4>{{list.heading}}</h4>
@@ -26,7 +26,7 @@
                 </ng-template>
                 <ng-template ngbSlide>
                     <div class="backgroundsmall">
-                        <img src="app/assets/images/home-background.svg" alt="">
+                        <img src="{{sliderimage}}" alt="">
                     </div>
                     <div *ngFor="let list of card3" class="carousel-caption">
                         <h4>{{list.heading}}</h4>
@@ -36,7 +36,7 @@
                 </ng-template>
                 <ng-template ngbSlide>
                     <div class="backgroundsmall">
-                        <img src="app/assets/images/home-background.svg" alt="">
+                        <img src="{{sliderimage}}" alt="">
                     </div>
                     <div *ngFor="let list of card4" class="carousel-caption">
                         <h4>{{list.heading}}</h4>
@@ -47,7 +47,7 @@
             </ngb-carousel>
         </div>
         <div class="image-section">
-            <img src="app/assets/images/home-bg.svg" style="height: auto;width: 100%;" alt="">
+            <img src="{{image}}" style="height: auto;width: 100%;" alt="">
         </div>
         <div class="slider-container">
             <marquee class="slider">

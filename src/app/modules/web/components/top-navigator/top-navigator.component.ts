@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import data from '../../../../assets/data/JT-website-json-data.json';
 
 @Component({
   selector: 'app-top-navigator',
@@ -9,6 +10,7 @@ export class TopNavigatorComponent implements OnInit {
 
   @Output() showSection = new EventEmitter<string>();
 
+  logo: any = data.topnavigator[0].logoimage;
   constructor() { }
 
   ngOnInit(): void {

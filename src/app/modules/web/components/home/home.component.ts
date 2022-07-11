@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   card2 : any = data.home[0].sliders.slide2;
   card3 : any = data.home[0].sliders.slide3;
   card4 : any = data.home[0].sliders.slide4;
+  sliderimage: any = data.home[0].sliders.sliderimage;
+  image: any = data.home[0].sliders.image;
   images = [ 
     { title: 'Jyoti Technosoft', subtitle: 'Delivering Range Of Solutions', content: 'Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.' },
     { title: 'Complete Web Solutions', subtitle: 'Graphics / Web Design / Web Application', content: 'Responsive Designs' },

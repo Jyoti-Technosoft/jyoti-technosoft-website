@@ -1,7 +1,12 @@
 {
+    "topnavigator":[{
+        "logoimage":"/app/assets/images/JyotiTechnosoft-logo.png"
+    }],
     "home" : [
     {
     "sliders" : {
+        "sliderimage":"app/assets/images/home-background.svg",
+        "image":"app/assets/images/home-bg.svg",
         "slide1": [{
             "heading": "Jyoti Technosoft",
             "subHeading": " Delivering Range Of Solutions ",
