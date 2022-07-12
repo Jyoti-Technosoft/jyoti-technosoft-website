@@ -24,8 +24,8 @@ import { TopNavigatorComponent } from './components/top-navigator/top-navigator.
 import { ServicesComponent } from './components/services/services.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
-import { SliderComponent } from './components/slider/slider.component';
-import { GalaryComponent } from './components/galary/galary.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { GallerydetailsComponent } from './components/gallerydetails/gallerydetails.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +37,8 @@ import { GalaryComponent } from './components/galary/galary.component';
     ServicesComponent,
     SkillsComponent,
     ContactsComponent,
-    SliderComponent,
-    GalaryComponent
+    GalleryComponent,
+    GallerydetailsComponent
   ],
   imports: [
     CommonModule,

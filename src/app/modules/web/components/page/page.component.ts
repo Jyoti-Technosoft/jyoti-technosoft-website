@@ -10,17 +10,22 @@ export class PageComponent implements OnInit {
 
   title = 'Jyoti Technosoft';
   section: string = '';
-
+  public item : any = '';
   constructor(
   private scroller: ViewportScroller
   ) { }
 
   ngOnInit(): void {
+    if(localStorage.getItem('item')){
+      this.item = localStorage.getItem('item')
+      this.showSection(this.item)
+      localStorage.removeItem('item')
+    }
   }
-
+    
   showSection(event: string) {
     this.section = event;
-    if(event == 'about' || event == 'contacts') {
+    if(event == 'about' || event == 'contacts' || event == 'home') {
       this.scroller.setOffset([0, 60])
     } else {
       this.scroller.setOffset([0, 10])
