@@ -1,60 +1,53 @@
 <app-top-navigator ></app-top-navigator>
 <div style="margin: 70px 13% 0px 13%">
 
-
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="card hover">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
-                    alt="Skyscrapers" />
+    <div *ngIf="route == 'fun'">
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].SnacksGames ;let i = index">
+            <div class="col">
+                <div class="card hover">
+                    <img [src]="item" class="card-img-top" alt="Birthday" />
+                </div>
             </div>
         </div>
     </div>
+
+    <div *ngIf="route == 'birthday'">
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Birthday ;let i = index">
+            <div class="col">
+                <div class="card hover">
+                    <img [src]="item" class="card-img-top" alt="Birthday" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="route == 'holi'">
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Holi ;let i = index">
+            <div class="col">
+                <div class="card hover">
+                    <img [src]="item" class="card-img-top" alt="Birthday" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="route == 'independence'">
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Independence ;let i = index">
+            <div class="col">
+                <div class="card hover">
+                    <img [src]="item" class="card-img-top" alt="Birthday" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="route == 'diwali'">
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Diwali ;let i = index">
+            <div class="col">
+                <div class="card hover">
+                    <img [src]="item" class="card-img-top" alt="Birthday" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

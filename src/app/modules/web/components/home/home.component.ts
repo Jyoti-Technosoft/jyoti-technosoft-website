@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import data from '../../../../assets/data/JT-website-json-data.json';
+
+import data from '../../../../../assets/data/JT-website-json-data.json';
 
 @Component({
   selector: 'app-home',
@@ -25,13 +26,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.imagesUrl = [
-      { image: 'app/assets/client/progressmaker.png', thumbImage: 'progressmaker-new-logo-single.png',top:"30",margin:"margin-top:9px",width:"200", title: '' },
-      { image: 'app/assets/client/biztree.png', thumbImage: 'app/assets/client/biztree.png', top:"50", margin:"margin-bottom:6px", width:"150", title: '' },
-      { image: 'app/assets/client/boatgroup.png', thumbImage: 'app/assets/client/boatgroup.png',top:"50",margin:"",width:"150", title: '' },
-      { image: 'app/assets/client/cx-group.png', thumbImage: 'app/assets/client/cx-group.png', top:"50",margin:"",width:"150", title: '' },
-      { image: 'app/assets/client/enteros.png', thumbImage: 'app/assets/client/enteros.png',top:"50",margin:"", width:"150",title: '' },
-      { image: 'app/assets/client/oxos.png', thumbImage: 'app/assets/client/oxos.png',top:"50",margin:"", width:"150", title: '' },
-      { image: 'app/assets/client/tlc.png', thumbImage: 'app/assets/client/tlc.png',top:"50",margin:"", width:"150",title: '' },
+      { image: 'assets/client/progressmaker.png', thumbImage: 'assets/progressmaker-new-logo-single.png',top:"30",margin:"margin-top:9px",width:"200", title: '' },
+      { image: 'assets/client/biztree.png', thumbImage: 'assets/client/biztree.png', top:"50", margin:"margin-bottom:6px", width:"150", title: '' },
+      { image: 'assets/client/boatgroup.png', thumbImage: 'assets/client/boatgroup.png',top:"50",margin:"",width:"150", title: '' },
+      { image: 'assets/client/cx-group.png', thumbImage: 'assets/client/cx-group.png', top:"50",margin:"",width:"150", title: '' },
+      { image: 'assets/client/enteros.png', thumbImage: 'assets/client/enteros.png',top:"50",margin:"", width:"150",title: '' },
+      { image: 'assets/client/oxos.png', thumbImage: 'assets/client/oxos.png',top:"50",margin:"", width:"150", title: '' },
+      { image: 'assets/client/tlc.png', thumbImage: 'assets/client/tlc.png',top:"50",margin:"", width:"150",title: '' },
     ];
   }
 

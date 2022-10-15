@@ -40,24 +40,36 @@
                     </mat-form-field>
                 </div>
                 <div class="button-container">
-                    <ngx-recaptcha2 siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx"></ngx-recaptcha2>
+                    <ngx-recaptcha2 #captchaElem
+                        siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx"
+                        [useGlobalDomain]="false"
+                        formControlName="recaptcha"
+                        (success)="handleSuccess($event)"
+                        formControlName="recaptcha"
+                    ></ngx-recaptcha2>
                     <div class="submit-button">
-                        <button mat-raised-button [disabled]="myForm.invalid" color="primary" id="submitButton">SUBMIT</button>
+                        <button mat-raised-button [disabled]="myForm.invalid" color="primary" id="submitButton"
+                        (click)="onSubmit($event)">SUBMIT</button>
                     </div>
                 </div>
             </form>
         </div>
         <div class="right-section">
             <div class="icon-input" *ngFor="let list of address">
-                <mat-icon aria-hidden="false" aria-label="Example home icon">{{list.icon}}</mat-icon>
-                <p>{{list.address}}</p>
+                <div style="display: flex;">
+                    <div><mat-icon aria-hidden="false" aria-label="Example home icon">{{list.icon}}</mat-icon></div>
+                    <div style="display: flex; flex-direction: column">
+                        <span><b>Main Branch: </b>{{list.address1}}</span>
+                        <span><b>Pal Branch: </b>{{list.address2}}</span>
+                    </div>
+                </div>
             </div>
-            <div class="icon-input" *ngFor="let list of phone">
-                <mat-icon aria-hidden="false" aria-label="Example home icon">{{list.icon}}</mat-icon>
+            <div class="icon-input" style="margin-top: 10px;" *ngFor="let list of phone">
+                <div><mat-icon aria-hidden="false" aria-label="Example home icon">{{list.icon}}</mat-icon></div>
                 <p>{{list.phone}}</p>
             </div>
             <div class="icon-input" *ngFor="let list of email">
-                <mat-icon aria-hidden="false" aria-label="Example home icon">{{list.icon}}</mat-icon>
+                <div><mat-icon aria-hidden="false" aria-label="Example home icon">{{list.icon}}</mat-icon></div>
                 <p>{{list.emailId}}</p>
             </div>
         </div>

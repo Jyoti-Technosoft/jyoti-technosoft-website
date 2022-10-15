@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressBarMode } from '@angular/material/progress-bar';
-import data from '../../../../assets/data/JT-website-json-data.json';
+
+import data from '../../../../../assets/data/JT-website-json-data.json';
 
 @Component({
   selector: 'app-skills',

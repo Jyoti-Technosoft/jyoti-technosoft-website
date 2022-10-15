@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import data from '../../../../assets/data/JT-website-json-data.json';
+
+import data from '../../../../../assets/data/JT-website-json-data.json';
 
 @Component({
   selector: 'app-about',

@@ -1,6 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import data from '../../../../assets/data/JT-website-json-data.json';
 import { Router } from '@angular/router';
+
+import data from '../../../../../assets/data/JT-website-json-data.json';
+
 @Component({
   selector: 'app-top-navigator',
   templateUrl: './top-navigator.component.html',
@@ -9,8 +11,8 @@ import { Router } from '@angular/router';
 export class TopNavigatorComponent implements OnInit {
 
   @Output() showSection = new EventEmitter<string>();
-
   logo: any = data.topnavigator[0].logoimage;
+  
   constructor( private router: Router ) { }
 
   ngOnInit(): void {
