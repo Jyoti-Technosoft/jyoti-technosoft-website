@@ -18,7 +18,7 @@ export class TopNavigatorComponent implements OnInit {
   ngOnInit(): void {
   }
   goDown(section: string) {
-    if(this.router.url == '/gallery'){
+    if(this.router.url.includes('/gallery')){
       this.router.navigate(['/'])
       localStorage.setItem('item',section)
     }

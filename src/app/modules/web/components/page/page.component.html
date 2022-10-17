@@ -24,11 +24,12 @@
     <app-skills></app-skills>
   </div>
   <div class="parallax2"></div>
-  <div [id]="section == 'gallery' && 'gallery'"></div>
 
+  <div [id]="section == 'gallery' && 'gallery'"></div>
   <div style="margin: 70px 13% 0px 13%">
     <app-gallery></app-gallery>
-    </div>
+  </div>
+  
   <div style="margin-top: 50px">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.849950595389!2d72.79385851529051!3d21.19811888590681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ad62b2491a66dc4!2sJyoti%20Technosoft!5e0!3m2!1sen!2sin!4v1586443823071!5m2!1sen!2sin"
@@ -40,6 +41,7 @@
     >
     </iframe>
   </div>
+
   <div style="margin: 70px 13% 0px 13%">
     <div [id]="section == 'contacts' && 'contacts'">
       <app-contacts></app-contacts>
