@@ -1,53 +1,67 @@
-<app-top-navigator ></app-top-navigator>
-<div style="margin: 70px 13% 0px 13%">
+<div class="gallery-details">
+    <app-top-navigator ></app-top-navigator>
+    <div style="margin: 70px 13% 0px 13%">
 
-    <div *ngIf="route == 'fun'">
-        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].SnacksGames ;let i = index">
-            <div class="col">
-                <div class="card hover">
-                    <img [src]="item" class="card-img-top" alt="Birthday" />
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="route == 'fun'">
+            <div *ngFor="let item of celebrationImages[0].SnacksGames; let i = index">
+                <div class="col-4">
+                    <div class="card">
+                        <img [src]="item" width="300" height="250" alt="Fun" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div *ngIf="route == 'birthday'">
-        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Birthday ;let i = index">
-            <div class="col">
-                <div class="card hover">
-                    <img [src]="item" class="card-img-top" alt="Birthday" />
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="route == 'birthday'">
+            <div *ngFor="let item of celebrationImages[0].Birthday; let i = index">
+                <div class="col-4">
+                    <div class="card">
+                        <img [src]="item" width="300" height="250" alt="Birthday" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div *ngIf="route == 'holi'">
-        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Holi ;let i = index">
-            <div class="col">
-                <div class="card hover">
-                    <img [src]="item" class="card-img-top" alt="Birthday" />
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="route == 'holi'">
+            <div *ngFor="let item of celebrationImages[0].Holi; let i = index">
+                    <div class="col-4">
+                    <div class="card">
+                        <img [src]="item" width="300" height="250" alt="Holi" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div *ngIf="route == 'independence'">
-        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Independence ;let i = index">
-            <div class="col">
-                <div class="card hover">
-                    <img [src]="item" class="card-img-top" alt="Birthday" />
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="route == 'independence'">
+            <div *ngFor="let item of celebrationImages[0].Independence; let i = index">
+                    <div class="col-4">
+                    <div class="card">
+                        <img [src]="item" width="300" height="250" alt="Independence" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div *ngIf="route == 'diwali'">
-        <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let item of celebrationImages[0].Diwali ;let i = index">
-            <div class="col">
-                <div class="card hover">
-                    <img [src]="item" class="card-img-top" alt="Birthday" />
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="route == 'diwali'">
+            <div *ngFor="let item of celebrationImages[0].Diwali; let i = index">
+                    <div class="col-4">
+                    <div class="card">
+                        <img [src]="item" width="300" height="250" alt="Diwali" />
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="route == 'more'">
+            <div *ngFor="let item of celebrationImages[0].More; let i = index">
+                    <div class="col-4">
+                    <div class="card">
+                        <img [src]="item" width="300" height="250" alt="More" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </div>

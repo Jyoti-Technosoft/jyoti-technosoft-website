@@ -49,6 +49,10 @@ export class GallerydetailsComponent implements OnInit {
     "Diwali": [
       "../../../assets/celebrations/Diwali-1.jpg",
       "../../../assets/celebrations/Diwali-2.jpg",
+    ],
+    "More": [
+      "../../../assets/celebrations/More-1.jpg",
+      "../../../assets/celebrations/More-2.jpg",
     ]
   }];
 
