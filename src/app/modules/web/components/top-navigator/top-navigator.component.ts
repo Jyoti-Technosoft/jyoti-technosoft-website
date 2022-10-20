@@ -12,15 +12,16 @@ export class TopNavigatorComponent implements OnInit {
 
   @Output() showSection = new EventEmitter<string>();
   logo: any = data.topnavigator[0].logoimage;
-  
+  selectedNav: string = "";
   constructor( private router: Router ) { }
 
   ngOnInit(): void {
   }
   goDown(section: string) {
+    this.selectedNav = section;
     if(this.router.url.includes('/gallery')){
       this.router.navigate(['/'])
-      localStorage.setItem('item',section)
+      localStorage.setItem('item', section);
     }
     this.showSection.emit(section);
   }

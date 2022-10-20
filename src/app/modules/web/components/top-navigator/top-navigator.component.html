@@ -1,37 +1,33 @@
-<!-- <mat-toolbar>
-  <input type="checkbox" id="nav-check">
-  <label for="nav-check" class="bars">
-    <i class="fa fa-bars"></i>
-  </label>
-  <a style="cursor:pointer;" (click)="goDown('home')">
-    <img class="logo" src="/assets/images/JyotiTechnosoft-logo.png" />
-  </a>
-  <span class="navigation-spacer"></span>
-  <div class="nav-button-row">
-    <button mat-button color="primary" >Home</button>
-    <button mat-button color="primary" >About</button>
-    <button mat-button color="primary" (click)="goDown('services')">Services</button>
-    <button mat-button color="primary" (click)="goDown('skills')">Skills</button>
-    <button mat-button color="primary" (click)="goDown('contacts')">Contacts</button>
-  </div>
-</mat-toolbar> -->
-
 <nav class="navbar">
-  <div class="navbar-container container">
-      <input type="checkbox" name="" id="">
-      <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-      </div>
-      <ul class="menu-items">
-          <li> <button mat-button color="primary" (click)="goDown('home')">Home</button></li>
-          <li> <button mat-button color="primary" (click)="goDown('about')">About</button></li>
-          <li> <button mat-button color="primary" (click)="goDown('services')">Services</button></li>
-          <li><button mat-button color="primary" (click)="goDown('skills')">Skills</button></li>
-          <!-- <li><button mat-button color="primary" (click)="goDown('gallery')">Gallery</button></li> -->
-          <li><button mat-button color="primary" (click)="goDown('contacts')">Contacts</button></li>
-      </ul>
-      <img class="logo" src="{{logo}}" />
+  <div class="navbar-container">
+    <ul class="menu-items">
+      <li>
+        <button mat-button color="primary" (click)="goDown('home')" [ngClass]="selectedNav == 'home' ? 'active' : ''">
+          Home
+        </button>
+      </li>
+      <li>
+        <button mat-button color="primary" (click)="goDown('about')" [ngClass]="selectedNav == 'about' ? 'active' : ''">
+          About
+        </button>
+      </li>
+      <li>
+        <button mat-button color="primary" (click)="goDown('services')" [ngClass]="selectedNav == 'services' ? 'active' : ''">
+          Services
+        </button>
+      </li>
+      <li>
+        <button mat-button color="primary" (click)="goDown('skills')" [ngClass]="selectedNav == 'skills' ? 'active' : ''">
+          Skills
+        </button>
+      </li>
+      <!-- <li><button mat-button color="primary" (click)="goDown('gallery')">Gallery</button></li> -->
+      <li>
+        <button mat-button color="primary" (click)="goDown('contacts')" [ngClass]="selectedNav == 'contacts' ? 'active' : ''">
+          Contacts
+        </button>
+      </li>
+    </ul>
+    <img class="logo" src="{{ logo }}" />
   </div>
-</nav> 
+</nav>

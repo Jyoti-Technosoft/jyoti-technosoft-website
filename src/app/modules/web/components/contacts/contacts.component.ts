@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ChangeDetectorRef, ChangeDetectionStrategy, ElementRef } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ChangeDetectorRef, ChangeDetectionStrategy, ElementRef, ViewEncapsulation } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 // import { ReCaptcha2Component } from 'ngx-captcha';
 // import axios from 'axios';
@@ -9,7 +9,8 @@ import data from '../../../../../assets/data/JT-website-json-data.json';
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None
 })
 export class ContactsComponent implements OnInit {
   myForm: FormGroup | any;
