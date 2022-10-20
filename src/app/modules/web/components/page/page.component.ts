@@ -16,11 +16,8 @@ export class PageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if(localStorage.getItem('item')){
-      this.item = localStorage.getItem('item')
-      this.showSection(this.item)
-      localStorage.removeItem('item')
-    }
+    this.item = localStorage.getItem('item') || "";
+    this.showSection(this.item);
   }
     
   showSection(event: string) {

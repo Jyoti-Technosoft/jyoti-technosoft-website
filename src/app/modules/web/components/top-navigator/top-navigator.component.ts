@@ -16,12 +16,13 @@ export class TopNavigatorComponent implements OnInit {
   constructor( private router: Router ) { }
 
   ngOnInit(): void {
+    this.selectedNav = localStorage.getItem('item') || "";
   }
   goDown(section: string) {
     this.selectedNav = section;
+    localStorage.setItem('item', section);
     if(this.router.url.includes('/gallery')){
       this.router.navigate(['/'])
-      localStorage.setItem('item', section);
     }
     this.showSection.emit(section);
   }
