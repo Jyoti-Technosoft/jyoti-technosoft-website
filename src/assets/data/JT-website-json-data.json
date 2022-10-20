@@ -8,9 +8,9 @@
         "sliderimage":"/assets/images/home-background.svg",
         "image":"/assets/images/home-bg.svg",
         "slide1": [{
-            "heading": "Jyoti Technosoft",
+            "heading": "Jyoti Technosoft LLP",
             "subHeading": " Delivering Range Of Solutions ",
-            "content": "Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services."
+            "content": "Jyoti Technosoft LLP is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services."
         }],
         "slide2": [{
             "heading": "Complete Web Solutions",
@@ -30,7 +30,7 @@
     }],
     "aboutus" : [{
         "content": [{
-            "content1": "Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.",
+            "content1": "Jyoti Technosoft LLP is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.",
             "content2":  "We are fully aware of the current trends and practices of the IT industry and we always strive to present our clients with better services and make a difference in their lives.",
             "content3":  "We understand that not all our clients are tech savvy, and gently guide them through the ever changing realm of the internet to their desired destination.We have created, launched and revamped many web sites and web applications. This experience has led  us to a deep understanding of what makes software projects successful.",
             "content4":  "We still value the importance of seeing a smile of satisfaction in our client's faces. We clearly understand that developing and maintaining longstanding working relationship is the key to success for us in this competitive industry. It is for this reason that we put substantial effort at creating successful relationship that are maintained by our outstanding services all of which are available at cost effective rates. Such factors propel our clients to choose us among our competitors on a regular basis."
@@ -75,7 +75,7 @@
     }],
     "Services":[{
         "contents": [{
-            "content1": "Jyoti Technosoft is one of the IT firm which providing professional software development. We have 6+years of experience in Web Application Development. We are providing complete Web Development Service. Both on Frontend designing as well backend. We are also providing thirdparty API Integration.",
+            "content1": "Jyoti Technosoft LLP is one of the IT firm which providing professional software development. We have 6+years of experience in Web Application Development. We are providing complete Web Development Service. Both on Frontend designing as well backend. We are also providing thirdparty API Integration.",
             "content2": "To meet both consumer demand and expectations, we develop for both mobile and web.Developing for both platforms is complex, but with the right tools and framework, the process is  little easier. We knows how to use NativeScript and Angular to develop cross platform apps development. " 
         }],
         "tabs": {
@@ -120,13 +120,13 @@
                 "progress": 80
             }]
         },
-        "content": "If you are looking for an organization that provides integrated IT solutions with high quality process, excellence in technology, reasonability, reliability & assurance to give you exactly what you need, your search ends at Jyoti Technosoft. Jyotit Technosoft is determined to make a niche for itself in the world of technology by delivering a variety of IT services like Custom Application Development, Web Development of any complexity to its clients worldwide."
+        "content": "If you are looking for an organization that provides integrated IT solutions with high quality process, excellence in technology, reasonability, reliability & assurance to give you exactly what you need, your search ends at Jyoti Technosoft LLP. Jyoti Technosoft LLP is determined to make a niche for itself in the world of technology by delivering a variety of IT services like Custom Application Development, Web Development of any complexity to its clients worldwide."
     }],
     "Map": [{
         "addressCard": {
             "image": { },
             "address": {
-                "heading": "Jyoti Technosoft",
+                "heading": "Jyoti Technosoft LLP",
                 "address1": "228, Second Floor, Green Elina, Nr. Sneh Sankul's Vadi, Anand Mahal Rd, Giriraj Society, Adajan, Surat 395009, Gujarat, India",
                 "address2": "417, Sumerru Business Corner, Nr. Somchintamani Appt., B/H Rajhans Multiplex, Pal Gam, Surat 395009, Gujarat, India"
             },

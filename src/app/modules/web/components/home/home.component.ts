@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   sliderimage: any = data.home[0].sliders.sliderimage;
   image: any = data.home[0].sliders.image;
   images = [ 
-    { title: 'Jyoti Technosoft', subtitle: 'Delivering Range Of Solutions', content: 'Jyoti Technosoft is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.' },
+    { title: 'Jyoti Technosoft LLP', subtitle: 'Delivering Range Of Solutions', content: 'Jyoti Technosoft LLP is a Surat-based company delivering top of the line services to clients when it comes to web development, open source customization, custom software development services.' },
     { title: 'Complete Web Solutions', subtitle: 'Graphics / Web Design / Web Application', content: 'Responsive Designs' },
     { title: 'Mobile Application Development', subtitle: 'Native App / Cross Platform Application Development', content: '' },
   ];

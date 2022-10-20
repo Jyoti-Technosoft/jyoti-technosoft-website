@@ -8,7 +8,7 @@ import { ViewportScroller } from "@angular/common";
 })
 export class PageComponent implements OnInit {
 
-  title = 'Jyoti Technosoft';
+  title = 'Jyoti Technosoft LLP';
   section: string = '';
   public item : any = '';
   constructor(
