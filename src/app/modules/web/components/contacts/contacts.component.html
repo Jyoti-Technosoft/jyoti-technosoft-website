@@ -5,7 +5,7 @@
 
     <div class="section">
         <div class="left-section">
-            <form [formGroup]="myForm">
+            <form [formGroup]="myForm" (ngSubmit)="successHandle(myForm.value)">
                 <div class="icon-input" *ngFor="let list of contact1">
                     <mat-icon class="mr-10" aria-label="Example home icon">{{list.icon}}</mat-icon>
                     <mat-form-field class="example-full-width">
@@ -18,9 +18,9 @@
                     <mat-icon aria-label="Example home icon">{{list.icon}}</mat-icon>
                     <mat-form-field class="example-full-width">
                         <mat-label>{{list.email}}</mat-label>
-                        <input matInput type="email" formControlName="email" id="email">
+                        <input matInput  formControlName="email" id="email">
                         <mat-error *ngIf="myError('email', 'required')">Email is required</mat-error>
-                        <mat-error *ngIf="myError('email', 'email')">Email is invalid</mat-error>
+                        <mat-error *ngIf="myError('email', 'pattern')">Email is invalid</mat-error>
                     </mat-form-field>
                 </div>
                 <div class="icon-input" *ngFor="let list of contact3">
@@ -44,12 +44,9 @@
                         siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx"
                         [useGlobalDomain]="false"
                         formControlName="recaptcha"
-                        (success)="handleSuccess($event)"
-                        formControlName="recaptcha"
                     ></ngx-recaptcha2>
                     <div class="submit-button">
-                        <button mat-raised-button [disabled]="myForm.invalid" color="primary" id="submitButton"
-                        (click)="onSubmit($event)">SUBMIT</button>
+                        <button mat-raised-button [disabled]="!myForm.valid" color="primary" id="submitButton">SUBMIT</button>
                     </div>
                 </div>
             </form>
