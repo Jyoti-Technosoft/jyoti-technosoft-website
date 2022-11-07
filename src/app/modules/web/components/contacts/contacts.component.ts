@@ -32,17 +32,6 @@ export class ContactsComponent implements OnInit {
   phone: any = data.ContactUs[0].address.phone;
   email: any = data.ContactUs[0].address.emailId;
 
-  public captchaIsLoaded = false;
-  public captchaSuccess = false;
-  public captchaIsExpired = false;
-  public captchaResponse?: string;
-
-  public theme: 'light' | 'dark' = 'light';
-  public size: 'compact' | 'normal' = 'normal';
-  public lang = 'en';
-  public useGlobalDomain: boolean = false;
-  hljs: any;
-
   constructor(private cdr: ChangeDetectorRef, public fb: FormBuilder) {}
 
   ngOnInit(): void {
@@ -55,14 +44,18 @@ export class ContactsComponent implements OnInit {
     });
   }
 
-  public myError = (controlName: string, errorName: string) => {
-    return this.myForm.controls[controlName].hasError(errorName);
-  };
-
   successHandle(item: any) {
     axios.post('https://jyotitechnosoft.com/handler.php', item).then((res) => {
       console.log(res);
     });
+  }
+
+  get myFormControl() {
+    return this.myForm.controls;
+  }
+
+  handleSuccess(event: any) {
+    console.log(event);
   }
 
 }

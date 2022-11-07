@@ -11,7 +11,7 @@
                     <mat-form-field class="example-full-width">
                         <mat-label >{{list.name}}</mat-label>
                         <input matInput type="text" formControlName="name" id="name">
-                        <mat-error *ngIf="myError('name', 'required')">Name is required</mat-error>
+                        <mat-error *ngIf="myFormControl.name.errors?.['required']">Name is required</mat-error>
                     </mat-form-field>
                 </div>
                 <div class="icon-input" *ngFor="let list of contact2">
@@ -19,8 +19,8 @@
                     <mat-form-field class="example-full-width">
                         <mat-label>{{list.email}}</mat-label>
                         <input matInput  formControlName="email" id="email">
-                        <mat-error *ngIf="myError('email', 'required')">Email is required</mat-error>
-                        <mat-error *ngIf="myError('email', 'pattern')">Email is invalid</mat-error>
+                        <mat-error *ngIf="myFormControl.email.errors?.['required']">Email is required</mat-error>
+                        <mat-error *ngIf="myFormControl.email.errors?.['pattern']">Email is invalid</mat-error>
                     </mat-form-field>
                 </div>
                 <div class="icon-input" *ngFor="let list of contact3">
@@ -28,7 +28,7 @@
                     <mat-form-field class="example-full-width">
                         <mat-label>{{list.subject}}</mat-label>
                         <input matInput type="text" formControlName="subject" id="subject">
-                        <mat-error *ngIf="myError('subject', 'required')">Subject is required</mat-error>
+                        <mat-error *ngIf="myFormControl.subject.errors?.['required']">Subject is required</mat-error>
                     </mat-form-field>
                 </div>
                 <div class="icon-input" *ngFor="let list of contact4">
@@ -36,15 +36,20 @@
                     <mat-form-field class="example-full-width">
                         <mat-label>{{list.message}}</mat-label>
                         <input matInput type="text" formControlName="message" id="message">
-                        <mat-error *ngIf="myError('message', 'required')">Message is required</mat-error>
+                        <mat-error *ngIf="myFormControl.message.errors?.['required']">Message is required</mat-error>
                     </mat-form-field>
                 </div>
-                <div class="button-container">
+                <div class="icon-input">
                     <ngx-recaptcha2 #captchaElem
                         siteKey="6LfmNKMZAAAAAKrDxRn2_NcHoRPW9-uFuWs98XCx"
                         [useGlobalDomain]="false"
                         formControlName="recaptcha"
+                        id="recaptcha"
+                        callback="recaptcha"
+                        (success)="handleSuccess($event)"
                     ></ngx-recaptcha2>
+                </div>
+                <div class="button-container">
                     <div class="submit-button">
                         <button mat-raised-button [disabled]="!myForm.valid" color="primary" id="submitButton">SUBMIT</button>
                     </div>
