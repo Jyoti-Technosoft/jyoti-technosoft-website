@@ -45,7 +45,7 @@ export class ContactsComponent implements OnInit {
   }
 
   successHandle(item: any) {
-    axios.post('https://jyotitechnosoft.com/handler.php', item).then((res) => {
+    axios.post('./handler.php', item).then((res) => {
       console.log(res);
     });
   }
